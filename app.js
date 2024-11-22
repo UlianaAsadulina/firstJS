@@ -63,3 +63,10 @@ console.log("All constants divisible by 5: " + allDivisibleBy5);
 // Cache the result in a variable.
 let n1GreaterN4 = n1 > n4;
 console.log("First number is greater then last number: " + n1GreaterN4);
+
+// Accomplish this arithmetic chain:
+// Subtract the first number from the second number.
+let sub21=n2-n1;
+console.log(sub21);
+// Multiply the result by the third number.
+// Find the remainder of dividing the result by the fourth number.

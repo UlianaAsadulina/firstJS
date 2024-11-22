@@ -58,3 +58,8 @@ console.log("Const n3= " + n3 + " divisible by 5: " + resultDivisionN3By5);
 console.log("Const n3= " + n4 + " divisible by 5: " + resultDivisionN4By5);
 let allDivisibleBy5 = resultDivisionN1By5 && resultDivisionN2By5 && resultDivisionN3By5 && resultDivisionN4By5;
 console.log("All constants divisible by 5: " + allDivisibleBy5); 
+
+// Check if the first number is larger than the last. 
+// Cache the result in a variable.
+let n1GreaterN4 = n1 > n4;
+console.log("First number is greater then last number: " + n1GreaterN4);

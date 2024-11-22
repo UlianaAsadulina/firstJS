@@ -33,7 +33,7 @@ const isUnique = n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 
 const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique;
 
 // Finally, log the results.
-console.log(isValid);
+// console.log(isValid);
 
 // Here's another example of how this COULD be done,
 // but it SHOULD NOT be done this way. As programmers,
@@ -43,3 +43,18 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   ((n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2) && 
   !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) && 
   (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
+
+
+//   Check if all numbers are divisible by 5. 
+// Cache the result in a variable.
+let resultDivisionN1By5 = n1 % 5 === 0;
+let resultDivisionN2By5 = n2 % 5 === 0;
+let resultDivisionN3By5 = n3 % 5 === 0;
+let resultDivisionN4By5 = n4 % 5 === 0;
+
+console.log("Const n1= " + n1 + " divisible by 5: " + resultDivisionN1By5); 
+console.log("Const n2= " + n2 + " divisible by 5: " + resultDivisionN2By5);
+console.log("Const n3= " + n3 + " divisible by 5: " + resultDivisionN3By5);
+console.log("Const n3= " + n4 + " divisible by 5: " + resultDivisionN4By5);
+let allDivisibleBy5 = resultDivisionN1By5 && resultDivisionN2By5 && resultDivisionN3By5 && resultDivisionN4By5;
+console.log("All constants divisible by 5: " + allDivisibleBy5); 

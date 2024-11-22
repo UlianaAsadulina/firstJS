@@ -30,7 +30,7 @@ const isUnique = n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 
 // for convenience. Note how we negate isOver25 using
 // the ! operator. We could also have tested for 
 // "isUnder25" as an alternative.
-const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique;
+let isValid = isSum50 && isTwoOdd && !isOver25 && isUnique;
 
 // Finally, log the results.
 // console.log(isValid);
@@ -74,3 +74,18 @@ console.log(multRezByN3);
 // Find the remainder of dividing the result by the fourth number.
 let rezMultByN4 = multRezByN3 % n4;
 console.log(rezMultByN4);
+
+// Change the way that isOver25 calculates so that we do not need to use the NOT operator (!) in other logic comparisons. 
+// Rename the variable as appropriate.
+
+// Check if no one number larger than 25
+// This time, we use the AND operator to check
+// if ALL of the numbers are no larger than 25.
+const isUnder25 = n1 < 25 && n2 < 25 && n3 < 25 && n4 < 25;
+
+// Put the results into a single variable for convenience. 
+// We teste for "isUnder25" as an alternative.
+isValid = isSum50 && isTwoOdd && isUnder25 && isUnique;
+
+// Finally, log the results.
+console.log(isValid);

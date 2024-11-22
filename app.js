@@ -66,7 +66,9 @@ console.log("First number is greater then last number: " + n1GreaterN4);
 
 // Accomplish this arithmetic chain:
 // Subtract the first number from the second number.
-let sub21=n2-n1;
-console.log(sub21);
+let subN2N1=n2-n1;
+console.log(subN2N1);
 // Multiply the result by the third number.
+let multRezByN3 = subN2N1*n3;
+console.log(multRezByN3);
 // Find the remainder of dividing the result by the fourth number.

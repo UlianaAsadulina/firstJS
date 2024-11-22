@@ -72,3 +72,5 @@ console.log(subN2N1);
 let multRezByN3 = subN2N1*n3;
 console.log(multRezByN3);
 // Find the remainder of dividing the result by the fourth number.
+let rezMultByN4 = multRezByN3 % n4;
+console.log(rezMultByN4);

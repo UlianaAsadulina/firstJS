@@ -87,3 +87,69 @@ isValid = isSum50 && isTwoOdd && isUnder25 && isUnique;
 
 // Finally results.
 console.log (`The statement what all four numbers are valid according to the provided criteria is  ${isValid}.`);
+
+
+// Part 2: Practical Math
+
+// You are planning a cross-country road trip!
+// The distance of the trip, in total, is 1,500 miles.
+const L=1500;
+// Your car’s fuel efficiency is as follows:
+// At 55 miles per hour, you get 30 miles per gallon.
+// At 60 miles per hour, you get 28 miles per gallon.
+// At 75 miles per hour, you get 23 miles per gallon.
+// You have a fuel budget of $175.
+const budget = 175;
+// The average cost of fuel is $3 per gallon.
+const gasCost = 3;
+let fuel = budget / gasCost; //how many gallons I can byu
+// Set up a program to answer the following questions:
+// How many gallons of fuel will you need for the entire trip?
+// Will your budget be enough to cover the fuel expense?
+// How long will the trip take, in hours?
+// Compare the results when traveling at an average of 55, 60, and 75 miles per hour. Which makes the most sense for the trip?
+// Log the results of your calculations using string concatenation or template literals.
+
+
+// Fuel efficiency:  55 miles p/hour, get 30 miles p/gallon.
+let speed = 55;
+console.log('Speed '+speed);
+let fuelConsumption = 30;
+let needFuel = L/fuelConsumption; //How many gallons of fuel I need for this trip
+let needBudget = needFuel*gasCost; //Will your budget be enough to cover the fuel expense?
+console.log('You need $ '+needBudget);
+if (needBudget>budget)
+    console.log("You budget is not enough")
+else {
+    let t=L/speed; //How long will the trip take, in hours
+    console.log(`Your trip will take ${t} hours`);
+}
+
+
+// Fuel efficiency:  60 miles p/hour, get 28 miles p/gallon.
+speed = 60;
+console.log('Speed '+speed);
+fuelConsumption = 28;
+needFuel = L/fuelConsumption; //How many gallons of fuel I need for this trip
+needBudget = needFuel*gasCost; //Will your budget be enough to cover the fuel expense?
+console.log('You need $ '+needBudget);
+if (needBudget>budget)
+    console.log("You budget is not enough")
+else {
+    let t=L/speed; //How long will the trip take, in hours
+    console.log(`Your trip will take ${t} hours`);
+}
+
+// Fuel efficiency:  75 miles p/hour, get 23 miles p/gallon.
+speed = 75;
+console.log('Speed '+speed);
+fuelConsumption = 23;
+needFuel = L/fuelConsumption; //How many gallons of fuel I need for this trip
+needBudget = needFuel*gasCost; //Will your budget be enough to cover the fuel expense?
+console.log('You need $ '+needBudget);
+if (needBudget>budget)
+    console.log("You budget is not enough")
+else {
+    let t=L/speed; //How long will the trip take, in hours
+    console.log(`Your trip will take ${t} hours`);
+}
